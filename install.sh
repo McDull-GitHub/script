@@ -74,7 +74,7 @@ get_ip() {
 }
 
 install_nami(){
-    curl -sL https://git.io/getnami | bash > /dev/null 2>&1 && sleep 6 && export PATH=$HOME/.nami/bin:$PATH && clear
+    curl -sL https://git.io/getnami | bash > /dev/null 2>&1 && export PATH=$HOME/.nami/bin:$PATH && clear
     if [[ ! $(command -v nami) ]];
     then
         clear
