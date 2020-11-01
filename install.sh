@@ -194,8 +194,8 @@ then
 fi
 
 export LC_ALL=C.UTF-8 #TODO: 中文顯示問題
-welcome
 get_ip
+welcome
 install
 [[ "$protocol" ]] || get_protocol
 run_brook
