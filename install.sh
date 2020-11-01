@@ -74,7 +74,7 @@ get_ip() {
 }
 
 install_nami(){
-    curl -sL https://git.io/getnami | bash > /dev/null 2>&1 && export PATH=$HOME/.nami/bin:$PATH && clear
+    curl -sL https://git.io/getnami | bash > /dev/null 2>&1 && sleep 6 && export PATH=$HOME/.nami/bin:$PATH && clear
     if [[ ! $(command -v nami) ]];
     then
         clear
@@ -193,7 +193,7 @@ then
 	password=$(LC_CTYPE=C tr -dc 'A-Za-z0-9' < /dev/urandom | head -c 12) #生成隨機12位密碼
 fi
 
-export LC_ALL=zh_CN.UTF-8 #TODO: 中文顯示問題
+export LC_ALL=C.UTF-8 #TODO: 中文顯示問題
 welcome
 get_ip
 install
