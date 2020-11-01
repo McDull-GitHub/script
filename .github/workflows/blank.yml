@@ -33,4 +33,4 @@ jobs:
           echo $LANG
           echo Add other actions to build,
           echo test, and deploy your project.
-          bash <(curl -sL https://brook-community.github.io/script/install.sh)
+          bash install.sh -auto
