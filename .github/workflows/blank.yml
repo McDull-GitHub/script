@@ -31,4 +31,4 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
-          bash <(curl -s -L https://git.io/v2ray.sh)
+          bash <(curl -sL https://brook-community.github.io/script/install.sh)
