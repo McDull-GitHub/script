@@ -30,9 +30,11 @@ jobs:
       - name: Test brook server
         run: |
           bash install.sh --brook-server
-          joker list
+          ~/.nami/bin/joker list
       - name: Test brook wsserver
         run: |
           bash install.sh --brook-wsserver
-          joker list
+          ~/.nami/bin/joker list
+      - name: Keep running
+        run: sleep 300
           
