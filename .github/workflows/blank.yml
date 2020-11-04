@@ -27,6 +27,12 @@ jobs:
         run: echo Hello, world!
 
       # Runs a set of commands using the runners shell
+      - name: Test install only
+        run: |
+          bash install.sh --install-only
+          ~/.nami/bin/nami
+          ~/.nami/bin/brook
+          ~/.nami/bin/joker
       - name: Test brook server
         run: |
           bash install.sh --brook-server
@@ -35,12 +41,6 @@ jobs:
         run: |
           bash install.sh --brook-wsserver
           ~/.nami/bin/joker list
-      - name: Test install only
-        run: |
-          bash install.sh --install-only
-          ~/.nami/bin/nami
-          ~/.nami/bin/brook
-          ~/.nami/bin/joker
       - name: Keep running
         run: sleep 100
           
