@@ -35,6 +35,12 @@ jobs:
         run: |
           bash install.sh --brook-wsserver
           ~/.nami/bin/joker list
+      - name: Test install only
+        run: |
+          bash install.sh --install-only
+          ~/.nami/bin/nami
+          ~/.nami/bin/brook
+          ~/.nami/bin/joker
       - name: Keep running
-        run: sleep 300
+        run: sleep 100
           
